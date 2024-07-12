@@ -35,13 +35,3 @@ def combinatie(invoer_lijst_2):
     korte_lijst = laag_en_hoog(invoer_lijst_2)
     uitvoer = mijn_functie2(korte_lijst[0],korte_lijst[1])
     return uitvoer
-
-print(aanbieding_1("Aardbei", 4, 0.1))
-inkomsten = [220, 430, 125, 160, 205, 90, 345]
-print(inkomsten_totaal(inkomsten,0.09))
-print(laag_en_hoog(inkomsten))
-invoer_lijst = [10,5,3,2,1,2,9]
-print(meervoudig(invoer_lijst))
-print(combinatie(inkomsten))
-
-
