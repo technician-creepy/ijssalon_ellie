@@ -12,8 +12,7 @@ def inkomsten_totaal(inkomsten, btw):
         totaal = totaal + bedrag
     
     btw = totaal * btw
-    totale_inkomsten = (f"Het totaal van alle inkomsten van deze week is {totaal} euro, waarover {btw} euro btw betaald dient te worden.")
-    return totale_inkomsten
+    return f"Het totaal van alle inkomsten van deze week is {totaal} euro, waarover {btw} euro btw betaald dient te worden."
 
 def laag_en_hoog(mijn_lijst):
     hoogste = max(mijn_lijst)
@@ -21,12 +20,12 @@ def laag_en_hoog(mijn_lijst):
     return [hoogste, laagste]
 
 def gemiddelde(mijn_lijst):
+    aantal = len(mijn_lijst)
     totaal = 0
     for inkomst in mijn_lijst:
-        totaal = totaal + inkomst
-    week_gemiddelde = totaal / 7
-    gemiddeld = (f"De gemiddelde inkomsten deze week zijn {week_gemiddelde} euro")
-    return gemiddeld
+        totaal += inkomst
+    week_gemiddelde = totaal / aantal
+    return f"De gemiddelde inkomsten deze week zijn {week_gemiddelde} euro"
 
 def meervoudig(invoer_lijst):
     return laag_en_hoog(invoer_lijst)
