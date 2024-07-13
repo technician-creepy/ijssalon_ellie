@@ -6,3 +6,14 @@ def decoreer(tekst=""):
     print(lengte * "*")
     print()
 
+def fooi_pp(bedrag, personen):
+    try:
+        bedrag_pp = bedrag / personen
+    except:
+        bedrag_pp = "??"
+    return f"HetBedrag per persoon is {bedrag_pp} euro."
+
+b = int(input("Welk bedrag zit er in de fooienpot? "))
+p = int(input("Over hoeveel mensen moet de pot verdeeld worden? "))
+
+print(fooi_pp(b,p))
