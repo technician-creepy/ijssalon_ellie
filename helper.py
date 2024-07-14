@@ -9,7 +9,7 @@ def decoreer(tekst=""):
 
 def fooi_pp(bedrag, personen):
     bedrag_pp = bedrag/personen
-    return f"Het bedrag per persoon is {bedrag_pp} euro"
+    return f"Het bedrag per persoon is {bedrag_pp} euro."
 
 def onderstreep(tekst=""):
     uit = []
@@ -17,5 +17,8 @@ def onderstreep(tekst=""):
     uit.append(len(tekst) * "=")
     return uit
 
-print(onderstreep("Test"))
-
+def som(inkomsten):
+    totaal = 0
+    for value in inkomsten:
+        totaal += inkomsten[value]
+    return totaal
